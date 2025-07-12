@@ -205,6 +205,51 @@ nav.navbar.scrolled {
   animation-delay: 2.4s;
 }
 
+
+.intro{
+  display: inline-block;
+  background: linear-gradient(90deg, #fcc5eb, #f365c4);
+  opacity: 0.8;
+  color: black;
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  
+}
+
+
+.fullIntro{
+  text-align: left;
+}
+
+
+.connectBtn {
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+  background: linear-gradient(270deg, #ff6fcf, #fcc5eb, #ff11b0);
+  background-size: 600% 600%;
+  color: black;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+  animation: gradientShift 4s ease infinite;
+}
+
+.connectBtn:hover {
+  transform: scale(1.1);
+  color: #000;
+}
+
+/*animated gradient */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /*use quadratic functiuon for deleting*/
 
 @keyframes floatL {

@@ -36,7 +36,7 @@ runs only when text changes (because of [text])
     
     setText(updatedTxt); 
     if (deletingTxt){
-        setDelta(prevDelta => prevDelta /1.7) //delete faster than typing 
+        setDelta(prevDelta => prevDelta /1.5) //delete faster than typing 
     }
     if (!deletingTxt && updatedTxt == fulltxt){
         setIsDeleting(true); 
@@ -55,12 +55,14 @@ runs only when text changes (because of [text])
       <Container> {/*centers  content horizontally and applies responsive paddi */}
         <Row className="align-items-center"> {/* divides space horizontally into a row of column  */}
           <Col xs={12} md={6} xl={7}> {/* reps a unit of space inside a ropw and uses a 12 column grid system */  }
-            <span className="tagline">Welcome To Mychaela's Portfolio</span>
-            <h1>{'Hi! I am a '} <span className='wrap'>{amText}</span></h1>
+          <div className="fullIntro">
+            <span className="intro">Welcome To Mychaela's Portfolio</span>
+            <h1>{'I am a '} <span className='wrap'>{amText}</span></h1>
             <p>I am a third year computer science student at McMaster University in their co-op program. I love to...</p>
-            <button onClick={() => console.log('connect')}>
+            <button className="connectBtn" onClick={() => console.log('connect')}>
               Let's Connect <BsArrowRightCircle size={25} />
             </button>
+         </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <div className="heart-container">
