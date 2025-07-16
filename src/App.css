@@ -282,55 +282,56 @@ nav.navbar.scrolled {
 
 
 /* Skills CSS */
-
-.skillsItems {
+.skillsSection {
+  margin-top: 200px;
   width: 100vw;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  background-color: #ffe6f2;
-  padding: 20px;
+  padding: 0;
 }
 
-.skillsTitle{
-  display: inline-block;
+.skillsTitle {
+  justify-content: center;
   background: linear-gradient(90deg, #fcc5eb, #f365c4);
   opacity: 0.8;
   color: black;
   font-weight: 600;
-  margin-top: 200px;
-  padding: 6px 12px;
   font-size: 30px;
-  margin-bottom: 20px;
+  padding: 12px;
+  margin-bottom: 30px;
 }
 
-.skill {
+.skillsGrid { /*make grid flex and wrap and have everything cetnered */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* centers all the .skillBox items */
+  background-color: #ffe6f2;
+  padding: 40px 0;
+  margin: 0;
+}
+
+.skillBox { /*each skiull has its own box with 120px width  */
+  width: 80px;
+  margin: 20px;
   text-align: center;
-  justify-content: center;
-  width: 100px;
-  margin: 0 auto;
 }
 
 .circle {
   background-color: white;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
 }
 
 .icon {
-  font-size: 45px;
+  font-size: 30px;
   color: #f542dd;
-  justify-content: center;
-  align-items: center;
 }
 
 .label {
   margin-top: 10px;
-  justify-content: center;
   font-size: 14px;
   color: #ff00aa;
   font-weight: bold;

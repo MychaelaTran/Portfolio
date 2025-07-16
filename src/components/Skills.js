@@ -1,46 +1,54 @@
 import React from 'react';
-import { RiHtml5Fill } from 'react-icons/ri';
-import { DiCss3, DiReact, DiNodejsSmall, DiMongodb } from 'react-icons/di';
-import { SiGraphql, SiFigma } from 'react-icons/si';
-import { FaPython } from "react-icons/fa";
-import { Row, Col, Container } from 'react-bootstrap';
+import { RiHtml5Fill, RiNextjsFill  } from 'react-icons/ri';
+import { DiCss3, DiReact, DiNodejsSmall, DiMongodb, DiDjango  } from 'react-icons/di';
+import { SiGraphql, SiFigma, SiElm,SiAuth0  } from 'react-icons/si';
+import { FaPython, FaJava  } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { PiFileSqlLight } from "react-icons/pi";
+import { TbBrandCSharp } from "react-icons/tb";
+import { BsFillCCircleFill } from "react-icons/bs";
+import { FaSquareGithub } from "react-icons/fa6";
+
+
+
 
 
 
 export const Skills = () => {
   const skills = [
-    { name: 'Python', icon : <FaPython />},
+    { name: 'Python', icon: <FaPython /> },
     { name: 'HTML', icon: <RiHtml5Fill /> },
     { name: 'CSS', icon: <DiCss3 /> },
     { name: 'React', icon: <DiReact /> },
-    { name: 'JavaScript', icon: <DiNodejsSmall /> },
-    { name: 'SQL', icon: <SiGraphql /> },
-    { name: 'ELM', icon: <DiMongodb /> },
-    { name: 'C#', icon: <SiFigma /> },
-    { name: 'C', icon: <SiFigma /> },
-    { name: 'Java', icon: <SiFigma /> },
-    { name: 'Next.JS', icon: <SiFigma /> }
-    
+    { name: 'JavaScript', icon: <IoLogoJavascript /> },
+    { name: 'SQL', icon: <PiFileSqlLight /> },
+    { name: 'ELM', icon: <SiElm /> },
+    { name: 'C#', icon: <TbBrandCSharp /> },
+    { name: 'C', icon: <BsFillCCircleFill /> },
+    { name: 'Java', icon: <FaJava  /> },
+    { name: 'Next.JS', icon: <RiNextjsFill  /> },
+    { name: 'Figma', icon: <SiFigma /> },
+    { name: 'Django', icon: <DiDjango  /> },
+    { name: 'Auth0', icon: <SiAuth0  /> },
+    { name: 'Git and Github', icon: <FaSquareGithub   /> },
   ];
 
   return (
-    <div id="skills" className="skillsItems">
-    <Row className="justify-content-center">
+    <div id="skills" className="skillsSection">
+      <div className="skillsTitle">
+        <span>Skills And Tools</span>
+      </div>
+
+      <div className="skillsGrid">
         {skills.map((skill) => (
-        <Col key={skill.name} xs={6} sm={4} md={3} lg={2} className="text-center mb-4">
+          <div key={skill.name} className="skillBox">
             <div className="circle">
-                <div className="icon">{skill.icon}</div>
+              <div className="icon">{skill.icon}</div>
             </div>
             <p className="label">{skill.name}</p>
-        </Col>
+          </div>
         ))}
-    </Row>
+      </div>
     </div>
-
-
-
-
-
-
   );
 };
