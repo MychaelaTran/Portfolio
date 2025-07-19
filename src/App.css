@@ -286,6 +286,7 @@ nav.navbar.scrolled {
   margin-top: 200px;
   width: 100vw;
   padding: 0;
+  margin-bottom: 100px;
 }
 
 .skillsTitle {
@@ -336,6 +337,20 @@ nav.navbar.scrolled {
   color: #ff00aa;
   font-weight: bold;
 }
+
+
+/* MyProjects component  */
+.projectsTitle{
+  justify-content: center;
+  background: linear-gradient(90deg, #fcc5eb, #f365c4);
+  opacity: 0.8;
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 12px;
+  margin-bottom: 30px;
+}
+
 
 
 
