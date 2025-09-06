@@ -352,6 +352,115 @@ nav.navbar.scrolled {
 }
 
 
+.projects p{
+  font-size: 18px;
+  text-align: center;
+}
+
+.proj-item-img {
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  cursor: pointer; 
+
+}
+
+.proj-item-img img{
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  transition: transform .5s ease, filter .5s ease;
+}
+
+.proj-item-img::after {
+  content: "";
+  position: absolute;
+  inset: 0; /*make overlay fill whole img */
+  border-radius: 20px;
+  background: linear-gradient(to right, rgba(255, 171, 210, 0.849) , rgba(247, 112, 186, 0.685), rgba(255, 17, 148, 0.801));
+  opacity: 0; /*invisible to start*/
+  transition: opacity .35s ease;
+  z-index: 1;
+}
+
+.proj-item-img:hover::after {
+  opacity: 1; /*after hover its visible*/
+}
+
+/* Centered text (hidden by default) */
+.proj-text {
+  position: absolute;
+  inset: 0;
+  z-index: 2; /*above back groundf*/
+  
+  /*text itself to be centered*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #fff;
+  text-align: center;
+  gap: .25rem;
+
+  opacity: 0;
+  transform: translateY(8px) scale(.8);
+  transition: opacity .35s ease, transform .35s ease;
+  pointer-events: none;        
+}
+
+.proj-item-img:hover .proj-text {
+  opacity: 1;
+  transform: translateY(0) scale(1); /*make look like zoomign in */
+}
+
+
+.proj-text h4 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+}
+.proj-text span {
+  opacity: .95;
+  font-size: .85rem;
+  padding: 7px;
+}
+
+.proj-item-img:hover img {
+  transform: scale(1.06);
+  filter: blur(0.5px);
+}
+
+
+/*tabs themselves */
+
+.projects .nav-tabs .nav-link {
+  color: black;                  
+  background-color: rgb(255, 117, 248); 
+  border: none;                  
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  transition:  0.3s ease, color 0.3s ease;
+}
+
+/* On hover */
+.projects .nav-tabs .nav-link:hover {
+  color: #ff80c0;
+  background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+/* Active tab */
+.projects .nav-tabs .nav-link.active {
+  color: #fff;
+  background-color: #ff1493; /* hot pink */
+}
+
+
+
+
+
 
 
 .App-link {
