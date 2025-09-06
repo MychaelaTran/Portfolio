@@ -2,6 +2,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import proj1 from "../assets/images/project-img1.png" //519w 512 h
 import { Tab, Tabs } from 'react-bootstrap';
 import { ProjectItem } from "./ProjectItem"
+import portImg from "../assets/images/portImg.png";
+import burger from "../assets/images/burgerQueen.png";
+import budget from "../assets/images/budget.png";
+import edjump from "../assets/images/ed jump.png";
 
 
 
@@ -10,22 +14,22 @@ export const Projects = () => {
   {
     title: "This Portfolio",
     desc: "Personal Website Made with React",
-    imgURL: proj1
+    imgURL: portImg
   },
   {
     title: "Burger Queen",
     desc: "Made in Elm",
-    imgURL: proj1
+    imgURL: burger
   },
   {
-    title: "Burger Queen",
-    desc: "Made in Elm",
-    imgURL: proj1
+    title: "Budget Site",
+    desc: "Made in JS",
+    imgURL: budget
   },
   {
-    title: "Burger Queen",
-    desc: "Made in Elm",
-    imgURL: proj1
+    title: "Ed Sheeran Jump",
+    desc: "Made with JS/HTML/CSS",
+    imgURL: edjump
   }
 ];
 

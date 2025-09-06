@@ -339,17 +339,7 @@ nav.navbar.scrolled {
 }
 
 
-/* MyProjects component  */
-.projectsTitle{
-  justify-content: center;
-  background: linear-gradient(90deg, #fcc5eb, #f365c4);
-  opacity: 0.8;
-  color: black;
-  font-weight: 600;
-  font-size: 30px;
-  padding: 12px;
-  margin-bottom: 30px;
-}
+
 
 
 .projects p{
@@ -359,6 +349,7 @@ nav.navbar.scrolled {
 
 .proj-item-img {
   position: relative;
+  aspect-ratio: 16/9; /*all same size*/
   border-radius: 20px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -388,7 +379,6 @@ nav.navbar.scrolled {
   opacity: 1; /*after hover its visible*/
 }
 
-/* Centered text (hidden by default) */
 .proj-text {
   position: absolute;
   inset: 0;
@@ -438,23 +428,21 @@ nav.navbar.scrolled {
 .projects .nav-tabs .nav-link {
   color: black;                  
   background-color: rgb(255, 117, 248); 
-  border: none;                  
   font-weight: bold;
   padding: 0.75rem 1.25rem;
   transition:  0.3s ease, color 0.3s ease;
 }
 
-/* On hover */
+
 .projects .nav-tabs .nav-link:hover {
   color: #ff80c0;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255, 255, 255);
 
 }
 
-/* Active tab */
 .projects .nav-tabs .nav-link.active {
-  color: #fff;
-  background-color: #ff1493; /* hot pink */
+  color: #ff80c0;
+  background-color: rgb(255, 255, 255);
 }
 
 
