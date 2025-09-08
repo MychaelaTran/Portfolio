@@ -6,6 +6,7 @@ import portImg from "../assets/images/portImg.png";
 import burger from "../assets/images/burgerQueen.png";
 import budget from "../assets/images/budget.png";
 import edjump from "../assets/images/ed jump.png";
+import godot from "../assets/images/godot.png";
 
 
 
@@ -35,15 +36,11 @@ export const Projects = () => {
 
   const projectsGame = [
   {
-    title: "Burger Queen",
-    desc: "Personal Website Made with React",
-    imgURL: proj1
+    title: "Godot 2D Speed Run",
+    desc: "Made with Godot in C# with a partner",
+    imgURL: godot
   },
-  {
-    title: "Godot Game",
-    desc: "Made with Godot in C#",
-    imgURL: proj1
-  }
+
 ];
 
 
