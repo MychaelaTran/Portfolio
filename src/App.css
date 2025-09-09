@@ -359,12 +359,15 @@ nav.navbar.scrolled {
 
 .proj-item-img img{
   width: 100%;
+  height: 100%;
   display: block;
   border-radius: 20px;
   transition: transform .5s ease, filter .5s ease;
+  /*if the transform property changes like gover then the change will 
+  take 0.5 seconds and the easing function ease makes it start fast and end slow.*/
 }
 
-.proj-item-img::after {
+.proj-item-img::after { /*pseduo element overlay*/
   content: "";
   position: absolute;
   inset: 0; /*make overlay fill whole img */
@@ -425,9 +428,10 @@ nav.navbar.scrolled {
 
 /*tabs themselves */
 
-.projects .nav-tabs .nav-link {
-  color: black;                  
-  background-color: rgb(255, 117, 248); 
+.projects .nav-tabs .nav-link { /*tab itself no hobver*/
+  color: black;        
+  border: none;          
+  background-color: rgb(255, 152, 250); 
   font-weight: bold;
   padding: 0.75rem 1.25rem;
   transition:  0.3s ease, color 0.3s ease;
@@ -436,13 +440,12 @@ nav.navbar.scrolled {
 
 .projects .nav-tabs .nav-link:hover {
   color: #ff80c0;
-  background-color: rgb(255, 255, 255);
-
+  background-color: rgb(255, 194, 235);
 }
 
 .projects .nav-tabs .nav-link.active {
   color: #ff80c0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 194, 235);
 }
 
 
