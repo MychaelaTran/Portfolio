@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { BsArrowRightCircle } from "react-icons/bs";
-import me from "../assets/images/me.jpg";
 import me2 from "../assets/images/me2.png";
 import { useState, useEffect } from "react";
 import heart from "../assets/images/heartPortfolio.png";

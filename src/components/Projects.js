@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import proj1 from "../assets/images/project-img1.png" //519w 512 h
 import { Tab, Tabs } from 'react-bootstrap';
 import { ProjectItem } from "./ProjectItem"
 import portImg from "../assets/images/portImg.png";
@@ -7,6 +6,8 @@ import burger from "../assets/images/burgerQueen.png";
 import budget from "../assets/images/budget.png";
 import edjump from "../assets/images/ed jump.png";
 import godot from "../assets/images/godot.png";
+import pet from "../assets/images/pet.png";
+import sql1 from "../assets/images/sql1.png";
 
 
 
@@ -24,7 +25,7 @@ export const Projects = () => {
   },
   {
     title: "Budget Site",
-    desc: "Made in JS",
+    desc: "Made in JS and Firebase Backend",
     imgURL: budget
   },
   {
@@ -39,6 +40,24 @@ export const Projects = () => {
     title: "Godot 2D Speed Run",
     desc: "Made with Godot in C# with a partner",
     imgURL: godot
+  },
+
+];
+
+  const projectsHack = [
+  {
+    title: "PawLog",
+    desc: "Made with React and MongoDB",
+    imgURL: pet
+  },
+
+];
+
+  const projectsSchool = [
+  {
+    title: "SQL Queries",
+    desc: "Made with SQL",
+    imgURL: sql1
   },
 
 ];
@@ -78,8 +97,32 @@ export const Projects = () => {
                 }
                 </Row>
               </Tab>
-              <Tab eventKey="school" title="School Projects">School Projects</Tab>
-              <Tab eventKey="hackathons" title="Hackathons">Hackathons</Tab>
+              <Tab eventKey="school" title="School Projects">
+                {projectsSchool.map((project, index) => {
+                    return(
+                      <ProjectItem
+                        key={index}
+                        {...project}
+                        />
+
+                    )
+                  })
+                }
+              </Tab>
+              <Tab eventKey="hackathons" title="Hackathons">
+                <Row>
+                  {projectsHack.map((project, index) => {
+                    return(
+                      <ProjectItem
+                        key={index}
+                        {...project}
+                        />
+
+                    )
+                  })
+                }
+                </Row>
+                </Tab>
             </Tabs>
           </Col>
         </Row>
