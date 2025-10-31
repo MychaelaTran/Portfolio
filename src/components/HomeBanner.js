@@ -48,6 +48,11 @@ runs only when text changes (because of [text])
     }
 
   }   
+    const sendEmail = () => {
+    const email = 'tranmychaela@gmail.com';
+    const subject = 'Connecting From Your Portfolio!';
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+  };
 
   return (
     <section className="banner" id="home">
@@ -57,8 +62,8 @@ runs only when text changes (because of [text])
           <div className="fullIntro">
             <span className="intro">Welcome To Mychaela's Portfolio</span>
             <h1>{'I am a '} <span className='wrap'>{amText}</span></h1>
-            <p>I am a third year computer science student at McMaster University in their co-op program. I love to...</p>
-            <button className="connectBtn" onClick={() => console.log('connect')}>
+            <p>I am a third year computer science student at McMaster University in their co-op program. I love to devlop software that empowers people while taking my own creative spin!</p>
+            <button className="connectBtn" onClick={sendEmail}>
               Let's Connect <BsArrowRightCircle size={25} />
             </button>
          </div>
