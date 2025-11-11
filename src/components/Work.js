@@ -1,37 +1,48 @@
-/*import * as React from 'react';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
+import "./work.css"
 export const Work = () => {
      return (
-    <Timeline>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Eat</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot />
-        </TimelineSeparator>
-        <TimelineContent>Sleep</TimelineContent>
-      </TimelineItem>
-    </Timeline>
-  );
+      <div>
+        {/* RBC */}
+        <div className="timeline">
+          <div className="timeline-box left-box">
+            <div className="text-box">
+              <h2>RBC</h2>
+              <small>Jan 2026 - April 2026</small>
+              <p> developed software</p>
+            </div>
+          </div>
+        </div>
+
+        {/* teaching assisntaw */}
+        <div className="timeline">
+          <div className="timeline-box right-box">
+            <div className="text-box">
+              <h2>Teaching ASsistant </h2>
+              <small>Sept 2025 - Present</small>
+              <p> developed software</p>
+            </div>
+          </div>
+        </div>
+
+
+        {/* stabl */}
+        <div className="timeline">
+          <div className="timeline-box left-box">
+            <div className="text-box">
+              <h2>StaBl Foundation</h2>
+              <small>May 2025 - Sept 2025</small>
+              <p> developed software</p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    );
 
 
 
 }
-  */

@@ -13,6 +13,7 @@ function App() {
       <HomeBanner />
       <Skills />
       <Projects />
+      <Work />
     </div>
   );
 }

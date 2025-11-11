@@ -1,0 +1,36 @@
+
+
+/* work.js */
+.timeline{
+  position: relative;
+  max-width:800px;
+  margin: 20px auto;
+}
+
+
+.timeline-box{
+  padding: 0px 0px;
+  position: relative;
+  margin: 0px;
+  width: 50%;
+  background-color: white;
+
+
+}
+
+.left-box{
+  left: 0;
+}
+
+.right-box{
+  right: 0;
+}
+
+.text-box{
+  text-align: left;
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  font-size: 15px;
+}
+
